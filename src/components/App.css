@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&family=Shadows+Into+Light&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #bfdddf; /* Black background */
+  /* font-family: sans-serif; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app-heading {
+  /* font-family: "Protest Revolution", sans-serif; */
+  font-family: "Pacifico", cursive;
+
+  display: flex; /* Ensures flexibility for further adjustments */
+  flex-direction: column; /* Maintains vertical order */
+  align-items: center; /* Centers content horizontally */
+  color: #70bdc2; /* Turquoise app name color */
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Add boldness for impact */
+  text-align: justify; /* Ensures all text in a line */
+  /* Remove previous margin/padding rules if not needed */
+  padding: 6rem; /* Adjust padding if needed */
+  position: absolute; /* Maintain absolute positioning if needed */
+  top: 0; /* Position at the top if needed */
+  left: 50%; /* Center horizontally if needed */
+  transform: translateX(-50%); /* Adjust horizontal alignment if needed */
+
+  /* Optional adjustments for text wrapping: */
+  white-space: nowrap; /* Prevent word wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows (optional) */
+}
+
+.random-quote {
+  color: white;
+  text-align: center;
+  display: block;
+  word-wrap: break-word; 
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2.5rem; /* Adjust font size as needed */
+  white-space: pre-line; /* Preserves newlines within code snippets */
+  line-height: 3; /* Increase line height for improved readability */
+  max-width: 100%; /* Set a safe maximum width (adjust as needed) */
+  margin: 0 auto; /* Center horizontally if necessary */
+}
+
+
+
+.app-heading h1 {
+  margin: 0; /* Remove default margin */
+}
+
+.quote-color {
+  color: white; /* White quote text */
+  font-size: 2rem; /* Adjust font size as needed */
+  line-height: 1.5;
+  /* text-align:c; */
+  margin: 0;
+  padding: 0 2rem; /* Add slight padding */
+  position: absolute;
+  top: calc(50% - 5rem); /* Adjust vertical position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.auther-name {
+  color: #ddd; /* Light gray author name */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  line-height: 1.3; /* Adjust line height for spacing */
+  text-align: center;
+  margin: 0;
+  padding: 0 2rem; /* Add slight padding */
+  position: absolute;
+  top: calc(50% + 2rem); /* Adjust vertical position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Optional responsive adjustments (consider using a layout framework like Bootstrap for more comprehensive responsiveness): */
+
+@media (max-width: 768px) {
+  .app-heading {
+    padding: 5rem; /* Adjust padding for smaller screens */
+  }
+  .quote-color,
+  .auther-name {
+    top: calc(50% + 2.5rem); /* Adjust spacing for smaller screens */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .app-heading {
+    padding: 2rem; /* Adjust padding for smaller screens */
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  .quote-color,
+  .auther-name {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    top: calc(50% + 1rem); /* Adjust spacing for smaller screens */
+  }
+}
